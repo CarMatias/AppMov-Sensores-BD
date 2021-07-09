@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trabajo Final</string>
+    <string name="ingresos">Ingresos</string>
+    <string name="nombrep">Nombre</string>
+    <string name="preciop">Precio</string>
+    <string name="descripcionp">Descripcion</string>
+    <string name="categoriap">Categoria</string>
+</resources>
