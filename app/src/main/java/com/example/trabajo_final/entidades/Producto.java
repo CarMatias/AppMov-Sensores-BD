@@ -2,22 +2,24 @@ package com.example.trabajo_final.entidades;
 
 public class Producto {
     private String nombre;
-    private int precio;
+    private String precio;
     private String categoria;
     private String descripcion;
+    private String foto;
 
-    public Producto (String nombre, int precio, String categoria, String descripcion){
+    public Producto(String nombre, String precio, String categoria, String descripcion, String foto){
         this.nombre = nombre;
         this.precio = precio;
         this.categoria = categoria;
         this.descripcion = descripcion;
+        this.foto = foto;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public int getPrecio() {
+    public String   getPrecio() {
         return precio;
     }
 
@@ -28,12 +30,15 @@ public class Producto {
     public String getDescripcion() {
         return descripcion;
     }
+    public String getFoto() {
+        return foto;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
 
@@ -43,5 +48,8 @@ public class Producto {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+    public void setFoto(String descripcion) {
+        this.foto = foto;
     }
 }

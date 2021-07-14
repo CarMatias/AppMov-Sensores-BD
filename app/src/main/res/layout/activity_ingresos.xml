@@ -69,6 +69,7 @@
         android:id="@+id/button3"
         android:layout_width="236dp"
         android:layout_height="64dp"
+        android:onClick="registrar"
         android:text="Cargar Producto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

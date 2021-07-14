@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIENVENIDO"
+
+        android:textSize="30dp"
+        android:textStyle="italic">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/cat_id"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/categoriap"></EditText>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="171dp"
+            android:layout_height="60dp"
+            android:onClick="buscar"
+            android:text="COMPRAR">
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/fot"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombre_idv"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/precio_idv"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/categoria_idv"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="187dp"
+            android:layout_height="105dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/descripcion_idv"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/compra"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="vib"
+                android:text="COMPRAR"
+                android:textSize="10sp"
+                android:visibility="invisible"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_marginLeft="300dp"
+        app:srcCompat="@mipmap/imagen1" />
+
+</androidx.cardview.widget.CardView>

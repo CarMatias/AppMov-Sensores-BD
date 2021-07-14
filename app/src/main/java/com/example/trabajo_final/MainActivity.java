@@ -20,32 +20,32 @@ public class MainActivity extends AppCompatActivity {
         Contrasenia = (EditText) findViewById(R.id.contrasenia_id);
     }
 
-
-
-
-   // public void registrar(View view) {
-        //Intent intent = new Intent(this, RegistroActivity.class);
-        //startActivity(intent);
-    //}
     public void iniciarSesion(View view) {
         String cuenta, clave;
         cuenta = usuario.getText().toString();
         clave = Contrasenia.getText().toString();
         if ((cuenta.equals("admin@admin.com"))&&(clave.equals("1111"))) {
-            Intent intent = new Intent(this, IngresosActivity.class);
+            Intent intent = new Intent(this, OpcionActivity.class);
             startActivity(intent);
             Toast.makeText(getApplicationContext(),"ADMIN",Toast.LENGTH_SHORT).show();
         }else if ((cuenta.equals("invitado@invitado.com"))&&(clave.equals("2222"))){
+            Intent intent = new Intent(this, VerProductosActivity.class);
+            startActivity(intent);
             Toast.makeText(getApplicationContext(),"INVITADO",Toast.LENGTH_SHORT).show();
         }else if ((cuenta.equals("usuario@usuario.com"))&&(clave.equals("3333"))){
+            Intent intent = new Intent(this, VerProductosActivity.class);
+            startActivity(intent);
             Toast.makeText(getApplicationContext(),"USUARIO",Toast.LENGTH_SHORT).show();
         }else if ((cuenta.equals("anonimo@anonimo.com"))&&(clave.equals("4444"))){
+            Intent intent = new Intent(this, VerProductosActivity.class);
+            startActivity(intent);
             Toast.makeText(getApplicationContext(),"ANONIMO",Toast.LENGTH_SHORT).show();
         }else if ((cuenta.equals("tester@tester.com"))&&(clave.equals("5555"))) {
+            Intent intent = new Intent(this, OpcionActivity.class);
+            startActivity(intent);
             Toast.makeText(getApplicationContext(), "TESTER", Toast.LENGTH_SHORT).show();
         }else{
             Toast.makeText(getApplicationContext(), "email y/o contraseña invalidos", Toast.LENGTH_SHORT).show();
-
         }
     };
 }
